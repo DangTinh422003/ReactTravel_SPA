@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&display=swap');
+
+.Destination {
+  padding: 50px 0;
+  background-image: linear-gradient(rgb(244, 241, 241), #fff);
+}
+
+.DestinationHeading {
+  font-family: 'Dancing Script', cursive;
+  color: #e8604c;
+  text-align: center;
+
+  h3 {
+    font-size: 4rem;
+    margin-top : 50px;
+  }
+}
+
+.DestinationDesc {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  color: #8a8888;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}

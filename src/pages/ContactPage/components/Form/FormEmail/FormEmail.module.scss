@@ -1,0 +1,74 @@
+.FormEmail {
+  background: #fff;
+  color: #000;
+  text-align: start;
+  border-radius: 14px;
+  padding: 30px;
+
+  .Heading {
+    font-weight: bold;
+    color: #2d1769;
+    font-size: 3rem;
+  }
+
+  form {
+    .formGroup > label {
+      margin-top: 20px;
+      color: #401f95;
+      font-style: italic;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    // submit btn
+    a {
+      width: 150px;
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #fa949d;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+// left form
+.leftForm {
+  .inputGroup {
+    display: flex;
+    align-items: center;
+    color: #fa949d;
+    border: 2px solid #2d1769;
+    border-radius: 10px;
+
+    label {
+      width: 30px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    input {
+      padding: 5px 0;
+      border: none;
+      outline: none;
+      background: transparent;
+    }
+  }
+}
+// right form
+.rightForm {
+  textarea {
+    width: 100%;
+    border-radius: 8px;
+    padding: 0 20px 0 0 0;
+    overflow: hidden;
+    border: none;
+    background: #ebebec;
+    padding: 10px 0 0 10px;
+  }
+}

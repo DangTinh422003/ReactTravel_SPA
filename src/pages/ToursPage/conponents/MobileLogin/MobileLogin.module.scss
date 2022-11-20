@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.MobileLogin {
+  background-color: #faf5ee;
+  background-image: url('https://gaviaspreview.com/wp/tevily/wp-content/uploads/2021/11/bg-line-2.png');
+  background-repeat: repeat;
+  padding-top: 5em;
+
+  // slogan
+  .slogan {
+    font-family: 'Dancing Script', cursive;
+    color: #f5634a;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  // MobileLoginHeading
+  &Heading {
+    font-size: 3em;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #313041;
+    padding: 10px 0;
+  }
+
+  // MobileLoginSubDesc
+  &Desc {
+    font-size: 1em;
+    color: #757783;
+    margin: 0;
+  }
+
+  // controlGroup
+  .controlGroup {
+    display: flex;
+
+    .signInBtn,
+    .deleteBtn {
+      width: 150px;
+      border: none;
+      margin: 20px 20px 0 0;
+      padding: 10px 20px;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 14px;
+      color: #fff;
+      transform: scale(1);
+      transition: 0.2s linear;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      i {
+        margin-right: 10px;
+      }
+      &:hover {
+        transform: scale(0.95);
+      }
+    }
+
+    .signInBtn {
+      background: #fc3c3c;
+    }
+
+    .deleteBtn {
+      background: rgb(153, 150, 150);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.SubmobileMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100vh;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-radius: 0 0 8px 8px;
+  background: rgb(242, 242, 242);
+  // opacity: 0;
+  display: none;
+  transition: all 0.3s ease-in-out;
+
+  & > li {
+    text-align: end;
+    font-weight: bold;
+    color: rgb(87, 87, 87);
+    position: relative;
+    padding: 12px 0;
+    padding-right: 20px;
+    border-bottom: 1px solid #ccc;
+    transition: all 0.1s linear;
+
+    &:hover {
+      color: #fff;
+      background: #f26d3d;
+    }
+  }
+
+  & > li:first-child() {
+    border-top: none;
+  }
+}
+
+// subnav UX
+.SubmobileMenu::after {
+  content: '';
+  position: absolute;
+  top: -35%;
+  right: 0;
+  width: 16%;
+  height: 40%;
+}

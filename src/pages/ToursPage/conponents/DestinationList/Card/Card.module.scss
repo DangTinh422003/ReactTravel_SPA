@@ -1,0 +1,121 @@
+.card {
+  border: none;
+  background: transparent;
+  margin-top: 10px;
+
+  // img
+  .cardImgWrap {
+    width: 100%;
+    .cardImgTop {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      transform: scaleX(1);
+      transition: all 0.2s linear;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.cardBody {
+  background: #fff;
+  border: 1px #ebe6de solid;
+  border-radius: 12px;
+  position: relative;
+  top: -10px;
+  padding: 10px 20px;
+
+  // card body head
+  .cardBodyHead {
+    display: flex;
+    justify-content: space-between;
+
+    .rating {
+      cursor: pointer;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #f7931e;
+      position: relative;
+
+      span {
+        font-size: 14px;
+        font-weight: bold;
+        white-space: nowrap;
+        position: absolute;
+        top: -15px;
+        transition: all 0.2s linear;
+        background: #fff;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      // rating hover
+      &:hover span {
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    // camera icon
+    .camera {
+      color: #757783;
+      font-size: 20px;
+      cursor: pointer;
+      position: relative;
+      &:hover {
+        color: rgb(48, 48, 48);
+      }
+      &::after {
+        content: '5';
+        color: #fff;
+        background: #ea6f5d;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        font-size: 8px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 4px;
+        right: -4px;
+      }
+    }
+  }
+
+  // card body content
+  .cardBodyContent {
+    .heading {
+      font-size: 20px;
+      font-weight: bold;
+      color: #363543;
+      cursor: pointer;
+      transition: 0.1s linear;
+      &:hover {
+        color: #e8604c;
+      }
+    }
+
+    .place {
+      color: #757783;
+      & i {
+        color: #e8604c;
+        width: 20px;
+        display: inline-block;
+      }
+    }
+
+    .cost {
+      color: #757783;
+      span {
+        color: #e8604c;
+        font-weight: bold;
+      }
+    }
+  }
+}

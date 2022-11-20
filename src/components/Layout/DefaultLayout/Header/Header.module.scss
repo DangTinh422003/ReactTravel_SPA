@@ -1,0 +1,31 @@
+.headerLogo {
+    width: 200px;
+    img {
+        height: 60%;
+        object-fit: cover;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.Header {
+    background-image: linear-gradient(to left, #fff, rgb(233, 230, 230));
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    & > div {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header {
+        justify-content: space-between;
+    }
+    .headerLogo {
+        margin-left: 50px;
+    }
+}

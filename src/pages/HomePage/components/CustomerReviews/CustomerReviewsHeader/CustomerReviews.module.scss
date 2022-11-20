@@ -1,0 +1,33 @@
+.CustomerReviews__header {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+
+  a {
+    text-decoration: none;
+    color: rgb(138, 136, 136);
+    margin: 0 10px;
+    background: #fff;
+    border-radius: 100rem;
+
+    &:hover {
+      color: #fff;
+      background: #e8604c;
+    }
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    border: 1px solid #ccc;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.Footer {
+  background: #313041;
+  color: #a9a8b6;
+  padding: 6% 0;
+
+  .goToTopBtn {
+    display: block;
+    width: 5em;
+    height: 5em;
+    background: #e8604c;
+    position: relative;
+    border-radius: 14px;
+    transition: all 0.1s linear;
+    &:hover {
+      transform: scale(0.9);
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+
+  .wrapgoToTopBtn {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+
+    p {
+      font-size: 2em;
+      position: absolute;
+      top: 50%;
+      transform: translate(70%, -50%);
+    }
+  }
+}

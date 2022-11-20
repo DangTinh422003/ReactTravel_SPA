@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script&family=Mulish:wght@500&display=swap');
+
+.Card img {
+  width: 100%;
+  object-fit: cover;
+  height: 270px;
+  border-radius: 10px;
+}
+
+.time {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  background: #e8604c;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.title,
+.location {
+  position: absolute;
+  left: 30px;
+}
+
+.title {
+  font-family: 'Mulish', sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+  bottom: 50px;
+}
+
+.location {
+  color: #e8604c;
+  font-family: 'Caveat', cursive;
+  font-size: 4rem;
+  bottom: 20px;
+}

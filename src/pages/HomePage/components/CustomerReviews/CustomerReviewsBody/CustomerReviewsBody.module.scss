@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,800;1,100;1,200;1,400;1,500&family=Mukta:wght@200&family=Satisfy&display=swap');
+
+.CustomerReviewsBody {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .formGroup {
+    margin: 10px;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    width: 20px;
+    color: #8a8888;
+    cursor: pointer;
+
+    &:hover {
+      color: #e8604c;
+    }
+  }
+
+  input {
+    outline: none;
+    border-radius: 8px;
+    padding: 4px 0;
+    padding-left: 20px;
+    border: 1px solid #8a8888;
+  }
+}
+
+.CustomerReviewsBodyDesc {
+  font-family: 'Bebas Neue', 'cursive';
+  font-style: italic;
+  color: #8a8888;
+  padding-bottom: 10px;
+  margin: 0;
+  font-size: 30px;
+  padding: 10px 0 0 0;
+  cursor: pointer;
+
+  &:hover {
+    color: #e8604c;
+  }
+}
+
+.submit {
+  button {
+    padding: 12px 20px;
+    border: none;
+    color: #fff;
+    background: #e8604c;
+    font-weight: bold;
+    border-radius: 8px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

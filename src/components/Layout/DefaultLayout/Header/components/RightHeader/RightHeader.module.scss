@@ -1,0 +1,156 @@
+.RightHeader {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 16px;
+
+  .SearchBtn,
+  .UserBtn {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    background: #eceaea;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    & > i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .SearchBtn:hover,
+  .UserBtn:hover {
+    background: #f17335;
+    & > i {
+      color: #fff;
+    }
+  }
+
+  .SearchBtn {
+    .searchBox {
+      background: #fff;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      padding: 12px 18px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      visibility: hidden;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      transition: visibility 0s, opacity 0.2s linear;
+
+      // before searchBox
+      &:before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #ccc;
+      }
+      // after searchBox
+      &:after {
+        content: '';
+        position: absolute;
+        top: -40px;
+        right: 0;
+        width: 200px;
+        height: 40px;
+      }
+
+      input {
+        width: 150px;
+        border: 1px solid #ccc;
+        padding: 6px 10px;
+        outline: none;
+        border-radius: 4px;
+      }
+
+      // icon search
+      i {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .SearchBtn:hover {
+    .searchBox {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .UserBtn {
+    background: #eceaea;
+    right: 50px;
+    position: relative;
+
+    ul {
+      background: #fff;
+      list-style-type: none;
+      width: 150px;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      // effect fade
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s linear;
+
+      li {
+        padding: 10px;
+
+        &:hover {
+          color: #e8604c;
+        }
+
+        i {
+          margin-left: 8px;
+        }
+      }
+
+      // li first-child border bottom
+      li:first-child {
+        border-bottom: 2px solid #ccc;
+      }
+
+      &::after {
+        content: '';
+        width: 200px;
+        height: 40px;
+        position: absolute;
+        top: -40px;
+        right: 0;
+      }
+    }
+
+    // effect fade
+    &:hover {
+      ul {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+
+// none in mobile
+@media (max-width: 380px) {
+  .SearchBtn {
+    display: none;
+  }
+}

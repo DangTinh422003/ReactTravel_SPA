@@ -1,0 +1,36 @@
+.Newsletter {
+  input[type='email'],
+  button[type='submit'] {
+    outline: none;
+    width: 100%;
+    padding: 20px 30px;
+    margin-top: 12px;
+    border-radius: 12px;
+    border: none;
+  }
+
+  button[type='submit'] {
+    background: #e8604c;
+    color: #fff;
+    font-weight: bold;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .desc {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 2rem;
+
+    p {
+      margin: 0 0 0 8px;
+    }
+
+    input[type='checkbox'] {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

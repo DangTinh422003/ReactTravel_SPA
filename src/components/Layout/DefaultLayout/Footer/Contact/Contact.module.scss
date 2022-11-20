@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&family=Ubuntu:ital,wght@0,300;1,400&display=swap');
+
+.Contact {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+  .desc {
+    font-size: 1.2em;
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #ccc;
+      margin: 30px auto;
+    }
+  }
+
+  p {
+    margin: 0;
+    text-align: left;
+    cursor: pointer;
+    &:hover {
+      color: #e85447;
+    }
+  }
+
+  img {
+    width: 60%;
+    margin-bottom: 30px;
+  }
+
+  // icon
+  i {
+    color: #e8604c;
+    width: 20px;
+  }
+
+  .phoneNum,
+  .email,
+  .address {
+    display: flex;
+    align-items: center;
+    i {
+      margin: 10px;
+    }
+  }
+}

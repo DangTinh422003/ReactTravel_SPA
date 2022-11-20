@@ -1,0 +1,29 @@
+// -------------------------------------- mobile menu  --------------------------------------
+.mobileMenu {
+  cursor: pointer;
+
+  i {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    margin-left: 30px;
+  }
+  &:hover i {
+    color: #e8604c;
+  }
+}
+
+.mobileMenu:hover ul {
+  display: block;
+}
+
+@media (max-width: 380px) {
+  .mobileMenu {
+    i {
+      margin-right: 30px;
+    }
+  }
+}

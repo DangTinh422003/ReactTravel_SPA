@@ -1,0 +1,24 @@
+.DestinationList {
+  padding: 6rem;
+
+  .Header {
+    .Heading {
+      color: #e8604c;
+      font-family: 'Caveat', cursive;
+      font-size: 2em;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .Desc {
+      color: #313041;
+      font-family: 'Mulish', sans-serif;
+      text-align: center;
+      font-weight: bold;
+      font-size: 4rem;
+    }
+  }
+
+  .card__item {
+    padding: 4px;
+  }
+}

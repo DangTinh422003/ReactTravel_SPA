@@ -1,0 +1,60 @@
+.CustomerReviews {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 60px 0;
+  background-image: linear-gradient(to right, #fff, #fff, rgb(218, 214, 214));
+
+  // container
+  & > div {
+    display: flex;
+  }
+  .leftForm {
+    position: relative;
+    width: 50%;
+    opacity: 1;
+    transform: scale(1);
+    animation: effectLeftForm 0.5s linear;
+    transition: left 0.5s linear, transform 0.1s linear, opacity 0.1s linear;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .leftForm[data-scroll='in'] {
+    left: 0;
+  }
+
+  .rightForm {
+    background: #313041;
+    padding: 30px 0 50px 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    flex: 1;
+    position: relative;
+    right: -20%;
+    animation: effectLeftCustomerReviews 0.5s linear;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+
+    @keyframes effectLeftCustomerReviews {
+      from {
+        opacity: 0;
+        position: relative;
+        right: -50%;
+      }
+    }
+    .rightForm[data-scroll='in'] {
+      right: 0;
+    }
+    .container {
+      padding: 0%;
+    }
+  }
+  .rightForm[data-scroll='in'] {
+    right: 0;
+  }
+}

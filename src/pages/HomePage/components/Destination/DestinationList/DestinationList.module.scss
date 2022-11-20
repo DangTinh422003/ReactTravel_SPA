@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&display=swap');
+
+.DestinationItem {
+  .card {
+    overflow: hidden;
+    border-radius: 12px;
+    height: 340px;
+    margin-top: 20px;
+    background: #313041;
+    border: none;
+    color: #fff;
+
+    .cardBody {
+      padding: 12px 25px;
+    }
+  }
+
+  // image
+  input[type='image'] {
+    object-fit: cover;
+    height: 60%;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .card .Featured {
+    display: inline-block;
+    font-size: 12px;
+    background: #14b0c3;
+    white-space: nowrap;
+    text-align: center;
+    padding: 4px 14px;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 14px;
+  }
+
+  .HeartIcon {
+    display: inline-block;
+    font-size: 12px;
+    background: rgb(135, 134, 134);
+    white-space: nowrap;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    &:hover {
+      opacity: 0.9;
+      transform: scale(0.9);
+    }
+  }
+
+  .card .card_title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #b45938;
+    margin: 0;
+  }
+
+  .card .card_desc {
+    margin: 0;
+    margin-bottom: 4px;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+  }
+
+  .card button {
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    color: #fff;
+    background-image: linear-gradient(to right, #f5634a, #fb8528);
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.HeartIcon.active {
+  background: rgb(196, 92, 92);
+}

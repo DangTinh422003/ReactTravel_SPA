@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script&family=Mulish:wght@500&display=swap');
+
+.ContactPage {
+  text-align: center;
+  color: #fff;
+
+  .wrapContactPage {
+    background-image: linear-gradient(to right, #4868db, #ac69b4);
+    padding: 0 0 30px 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .Heading {
+    margin: 40px 0 20px 0;
+    font-size: 4rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+  }
+  .Text {
+    color: #ccc;
+    font-style: italic;
+    margin: 0;
+  }
+}
