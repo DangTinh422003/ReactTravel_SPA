@@ -1,59 +1,108 @@
 .Nav {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
 
-    & > li {
+  & > li {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    & > div {
+      height: 100%;
+      width: 100%;
+      a {
+        padding: 0 18px;
         height: 100%;
-        position: relative;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        white-space: nowrap;
         display: flex;
         align-items: center;
-        padding: 0 18px;
+        text-decoration: none;
+        color: #5d5d6a;
+      }
+    }
+  }
 
+  & > li:hover {
+    color: #e8604c;
+  }
+
+  & > li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    background: #e8604c;
+    border-radius: 4px;
+    width: 0;
+    transition: all 0.2s linear;
+  }
+
+  & > li:hover::before {
+    width: 100%;
+  }
+}
+
+// mobile menu
+.mobileMenu {
+  svg {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 18px;
+    font-size: 50px;
+  }
+  .subMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 80px;
+    overflow: hidden;
+    // col
+    & > div div {
+      background: rgba(#e8604c, 1);
+      border-radius: 8px;
+      position: relative;
+      padding: 10px;
+      border-bottom: 1px solid #5d5d6a;
+      border-left: 1px solid #5d5d6a;
+      &:hover {
         a {
-            font-size: 16px;
-            cursor: pointer;
-            height: 100%;
-            white-space: nowrap;
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: #5d5d6a;
+          font-weight: bold;
+          text-transform: uppercase;
         }
-
-        // down icon
-        i {
-            position: relative;
-            left: 6px;
-        }
+      }
+      a {
+        color: #fff;
+        padding: 0 40px;
+        text-decoration: none;
+      }
     }
-
-    & > li:hover {
-        color: #e8604c;
+  }
+}
+.mobileMenu {
+  .subMenu {
+    display: none;
+  }
+  &:hover {
+    .subMenu {
+      display: block;
     }
+  }
+}
 
-    & > li::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 4px;
-        background: #e8604c;
-        border-radius: 4px;
-        width: 0;
-        transition: all 0.2s linear;
-    }
-
-    & > li:hover::before {
-        width: 100%;
-    }
-
-    // fade in animation SUVNAV
-    & > li:hover ul {
-        width: 200px;
-        opacity: 1;
-        visibility: visible;
-    }
+// responsive in mobile
+@media (max-width: 500px) {
+  .Home,
+  .Contact {
+    display: none;
+  }
 }

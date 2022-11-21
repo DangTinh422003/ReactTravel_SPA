@@ -16,7 +16,7 @@ const publicRoutes = [
   { path: '/destination/*', component: DestinationPage },
 
   // Contact
-  { path: '/contact*', component: ContactPage, layout: ContactLayout },
+  { path: '/contact/*', component: ContactPage, layout: ContactLayout },
 ];
 
 // private routes
