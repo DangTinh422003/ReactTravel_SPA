@@ -66,24 +66,25 @@
     width: 100%;
     margin-top: 80px;
     overflow: hidden;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     // col
     & > div div {
-      background: rgba(#e8604c, 1);
-      border-radius: 8px;
+      background: rgba(#313041, 1);
       position: relative;
       padding: 10px;
-      border-bottom: 1px solid #5d5d6a;
-      border-left: 1px solid #5d5d6a;
-      &:hover {
-        a {
-          font-weight: bold;
-          text-transform: uppercase;
-        }
-      }
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom: 1px #ccc solid;
+      border-left: 1px #ccc solid;
+
       a {
         color: #fff;
         padding: 0 40px;
         text-decoration: none;
+        &:hover {
+          color: #e8604c;
+        }
       }
     }
   }
