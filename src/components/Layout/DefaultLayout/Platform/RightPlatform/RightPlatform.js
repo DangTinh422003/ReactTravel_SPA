@@ -7,7 +7,7 @@ function RightPlatform() {
       <div className={clsx(styles.RightPlatform)}>
         <div className={clsx(styles.wrapItem, 'col-12', 'row')}>
           {/* 1 */}
-          <div className="col-5">
+          <div className="col-12 col-sm-6">
             <div className={clsx(styles.square)}>
               <div className={clsx(styles.icon)}>
                 <i className="fa-solid fa-hippo"></i>
@@ -18,7 +18,7 @@ function RightPlatform() {
             </div>
           </div>
           {/* 2 */}
-          <div className="col-5">
+          <div className="col-12 col-sm-6">
             <div className={clsx(styles.square)}>
               <div className={clsx(styles.icon)}>
                 <i className="fas fa-parachute-box"></i>
@@ -29,7 +29,7 @@ function RightPlatform() {
             </div>
           </div>
           {/* 3 */}
-          <div className="col-5">
+          <div className="col-12 col-sm-6">
             <div className={clsx(styles.square)}>
               <div className={clsx(styles.icon)}>
                 <i className="fas fa-motorcycle"></i>
@@ -40,7 +40,7 @@ function RightPlatform() {
             </div>
           </div>
           {/* 4 */}
-          <div className="col-5">
+          <div className="col-12 col-sm-6">
             <div className={clsx(styles.square)}>
               <div className={clsx(styles.icon)}>
                 <i className="far fa-paper-plane"></i>

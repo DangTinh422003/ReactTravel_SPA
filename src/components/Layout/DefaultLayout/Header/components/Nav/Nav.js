@@ -57,12 +57,12 @@ function Nav() {
         <CgMenuRight />
         <div className={styles.subMenu}>
           <div className="row">
-            <div className="col-6 d-sm-none"><Link to="/">Home</Link></div>
-            <div className="col-6"><Link to="/toursPage">Tours Page</Link></div>
-            <div className="col-6"><Link to="/destination">Destination</Link></div>
-            <div className="col-6"><Link to="/news">News</Link></div>
-            <div className="col-6"><Link to="/about">About</Link></div>
-            <div className="col-6 d-sm-none"><Link to="/contact">Contact</Link></div>
+            <div className="col-12 d-sm-none"><Link to="/">Home</Link></div>
+            <div className="col-12"><Link to="/toursPage">Tours Page</Link></div>
+            <div className="col-12"><Link to="/destination">Destination</Link></div>
+            <div className="col-12"><Link to="/news">News</Link></div>
+            <div className="col-12"><Link to="/about">About</Link></div>
+            <div className="col-12 d-sm-none"><Link to="/contact">Contact</Link></div>
           </div>
         </div>
       </div>
