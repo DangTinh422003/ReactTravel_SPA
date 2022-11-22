@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 .MobileLogin {
+  width: 100%;
   background-color: #faf5ee;
   background-image: url('https://gaviaspreview.com/wp/tevily/wp-content/uploads/2021/11/bg-line-2.png');
   background-repeat: repeat;
-  padding-top: 5em;
 
   // slogan
   .slogan {
@@ -18,7 +18,6 @@
   // MobileLoginHeading
   &Heading {
     font-size: 3em;
-    white-space: nowrap;
     font-weight: bold;
     color: #313041;
     padding: 10px 0;
@@ -34,6 +33,7 @@
   // controlGroup
   .controlGroup {
     display: flex;
+    margin-bottom: 20px;
 
     .signInBtn,
     .deleteBtn {
@@ -66,5 +66,10 @@
     .deleteBtn {
       background: rgb(153, 150, 150);
     }
+  }
+
+  .right,
+  .left {
+    margin-top: 2em;
   }
 }

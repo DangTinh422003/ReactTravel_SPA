@@ -4,11 +4,11 @@ import styles from './MobileLogin.module.scss';
 
 function MobileLogin() {
   return (
-    <div className={clsx(styles.MobileLogin)} id="mobileLogin">
+    <div className={clsx(styles.MobileLogin, 'd-none d-sm-block')} id="mobileLogin">
       <div className="container">
         <div className="row">
           {/* left */}
-          <div className="div col-6">
+          <div className={clsx('col-12 col-lg-6', styles.left)}>
             <p className={clsx(styles.slogan)}>Join to us</p>
             <h3 className={clsx(styles.MobileLoginHeading)}>Not a Member Yet?</h3>
             <p className={clsx(styles.MobileLoginDesc)}>Join us! Our members can access savings of up to 50% and earn Trip Coins while booking.</p>
@@ -24,7 +24,7 @@ function MobileLogin() {
             </div>
           </div>
           {/* right */}
-          <div className="right col-6 d-flex justify-content-end">
+          <div className={clsx('col-12 col-lg-6', styles.right)}>
             <img src={imgApp} alt="" />
           </div>
         </div>

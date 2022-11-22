@@ -8,7 +8,7 @@ function Slider() {
       <img src={slider} alt="" className={clsx(styles.ImgBg)} />
       <div className="container-fluid">
         <h4 className={clsx(styles.SliderHeading)}>Explore The Worlds</h4>
-        <p className={clsx(styles.SliderDesc)}>People Don't Take, Trips Take People</p>
+        <p className={clsx(styles.SliderDesc, 'd-none d-sm-block')}>People Don't Take, Trips Take People</p>
       </div>
     </div>
   );
