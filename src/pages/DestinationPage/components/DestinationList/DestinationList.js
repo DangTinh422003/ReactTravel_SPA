@@ -15,15 +15,15 @@ function DestinationList() {
         {/* body */}
         <div className={styles.Body}>
           <div className='row no-gutters'>
-            <div className={clsx('col-12 col-md-6 col-lg-3', styles.card__item)}><Card img={img1} location='Hungary' /></div>
-            <div className={clsx('col-12 col-md-6 col-lg-6', styles.card__item)}><Card img={img2} location='Thailand' /></div>
-            <div className={clsx('col-12 col-md-6 col-lg-3', styles.card__item)}><Card img={img3} location='France' /></div>
-            <div className={clsx('col-12 col-md-6 col-lg-6', styles.card__item)}><Card img={img4} location='United Kingdom' /></div>
-            <div className={clsx('col-12 col-md-6 col-lg-6', styles.card__item)}><Card img={img5} location='Italy' /></div>
-            <div className={clsx('col-12 col-md-6 col-lg-3', styles.card__item)}><Card img={img6} location='Japan' /></div>
-            <div className={clsx('col-12 col-md-6 col-lg-3', styles.card__item)}><Card img={img7} location='Morocco' /></div>
-            <div className={clsx('col-12 col-md-6 col-lg-3', styles.card__item)}><Card img={img8} location='Singapore' /></div>
-            <div className={clsx('col-12 col-md-6 col-lg-3', styles.card__item)}><Card img={img9} location='VietNam' /></div>
+            <div className={clsx('col-12 col-sm-6 col-md-4 col-lg-3', styles.card__item)}><Card img={img1} location='Hungary' /></div>
+            <div className={clsx('col-12 col-sm-6 col-md-4 col-lg-6', styles.card__item)}><Card img={img2} location='Thailand' /></div>
+            <div className={clsx('col-12 col-sm-12 col-md-4 col-lg-3', styles.card__item)}><Card img={img3} location='France' /></div>
+            <div className={clsx('col-12 col-sm-12 col-md-6 col-lg-6', styles.card__item)}><Card img={img4} location='United Kingdom' /></div>
+            <div className={clsx('col-12 col-sm-6 col-md-6 col-lg-6', styles.card__item)}><Card img={img5} location='Italy' /></div>
+            <div className={clsx('col-12 col-sm-6 col-md-3 col-lg-3', styles.card__item)}><Card img={img6} location='Japan' /></div>
+            <div className={clsx('col-12 col-sm-6 col-md-3 col-lg-3', styles.card__item)}><Card img={img7} location='Morocco' /></div>
+            <div className={clsx('col-12 col-sm-6 col-md-3 col-lg-3', styles.card__item)}><Card img={img8} location='Singapore' /></div>
+            <div className={clsx('col-12 col-sm-12 col-md-3 col-lg-3', styles.card__item)}><Card img={img9} location='VietNam' /></div>
           </div>
         </div>
 

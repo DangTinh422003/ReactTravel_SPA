@@ -16,12 +16,15 @@
 
   .Slider__desc {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Caveat', cursive;
     color: #e7614d;
     font-weight: bold;
-    font-size: 10em;
+    font-size: 7em;
+    @media screen and (max-width: 768px) {
+      font-size: 4em;
+    }
   }
 }
