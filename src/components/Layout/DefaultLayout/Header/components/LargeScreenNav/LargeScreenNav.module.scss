@@ -1,0 +1,51 @@
+.Nav {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  & > li {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    & > div {
+      height: 100%;
+      width: 100%;
+      a {
+        padding: 0 18px;
+        height: 100%;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #5d5d6a;
+      }
+    }
+  }
+
+  & > li:hover {
+    color: #e8604c;
+  }
+
+  & > li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    background: #e8604c;
+    border-radius: 4px;
+    width: 0;
+    transition: all 0.2s linear;
+  }
+
+  & > li:hover::before {
+    width: 100%;
+  }
+}

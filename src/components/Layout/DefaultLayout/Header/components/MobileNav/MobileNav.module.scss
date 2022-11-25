@@ -1,0 +1,56 @@
+// mobile menu
+.mobileMenu {
+  svg {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 18px;
+    font-size: 50px;
+  }
+  .subMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    margin-top: 80px;
+    overflow: hidden;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    // col
+    & > div div {
+      background: rgba(#313041, 0.9);
+      position: relative;
+      padding: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom-left-radius: 1px #ccc solid;
+      border-bottom: 1px #1c1b25 solid;
+      a {
+        color: #fff;
+        padding: 0 40px;
+        text-decoration: none;
+        &:hover {
+          color: #e8604c;
+        }
+      }
+    }
+  }
+}
+.mobileMenu {
+  .subMenu {
+    display: none;
+  }
+  &:hover {
+    .subMenu {
+      display: block;
+    }
+  }
+}
+
+// responsive in mobile
+@media (max-width: 500px) {
+  .Home,
+  .Contact {
+    display: none;
+  }
+}

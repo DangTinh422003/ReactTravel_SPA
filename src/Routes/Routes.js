@@ -1,9 +1,14 @@
 // Import layout
+import ContactLayout from '~/components/Layout/ContactLayout/ContactLayout';
+
+// import page
 import HomePage from '~/pages/HomePage/HomePage';
 import ToursPage from '~/pages/ToursPage/ToursPage';
 import DestinationPage from '~/pages/DestinationPage/DestinationPage';
 import ContactPage from '~/pages/ContactPage/ContactPage';
-import ContactLayout from '~/components/Layout/ContactLayout/ContactLayout';
+
+
+
 // public Routers
 const publicRoutes = [
   // Home
@@ -17,6 +22,7 @@ const publicRoutes = [
 
   // Contact
   { path: '/contact/*', component: ContactPage, layout: ContactLayout },
+
 ];
 
 // private routes

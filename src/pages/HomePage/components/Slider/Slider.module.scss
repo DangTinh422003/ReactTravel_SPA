@@ -37,32 +37,9 @@
     }
   }
 
-  .underlineSlider {
-    position: absolute;
-    left: 60%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    animation: effectUnderlineSlider 1s ease-in-out;
-    transition: all 0.5s ease-in-out;
-
-    @keyframes effectUnderlineSlider {
-      from {
-        opacity: 0;
-        top: 20%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-      }
-    }
-  }
-
-  .underlineSlider[data-scroll='in'] {
-    top: 20%;
-  }
-
   .sliderDesc {
     position: absolute;
-    top: 52%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -74,7 +51,7 @@
     opacity: 1;
     visibility: visible;
     animation: sliderDescEffect 0.5s ease-in-out;
-    transition: all 1s ease-in-out;
+    transition: all 2s ease-in-out;
 
     @keyframes sliderDescEffect {
       from {
@@ -92,7 +69,7 @@
       height: 0;
       background: #fff;
       animation: sliderDescGrow 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out;
+      transition: all 2s ease-in-out;
 
       @keyframes sliderDescGrow {
         from {
@@ -128,26 +105,6 @@
     }
   }
 
-  .underlineSliderMobile {
-    position: absolute;
-    // top: 45%;
-    // left: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    animation: effectUnderlineSliderMobile 1s ease-in-out;
-    transition: all 0.5s ease-in-out;
-
-    @keyframes effectUnderlineSliderMobile {
-      from {
-        opacity: 0;
-        top: 40%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-      }
-    }
-  }
-
   .sliderDescMobile {
     position: absolute;
     top: 50%;
@@ -161,7 +118,7 @@
     font-family: 'Caveat', cursive;
     opacity: 1;
     visibility: visible;
-    animation: sliderDescEffect 0.5s ease-in-out;
+    animation: sliderDescEffect 2s ease-in-out;
 
     @keyframes sliderDescEffect {
       from {
@@ -178,7 +135,7 @@
       width: 100%;
       height: 0;
       background: #fff;
-      animation: sliderDescGrow 0.5s ease-in-out;
+      animation: sliderDescGrow 2s ease-in-out;
 
       @keyframes sliderDescGrow {
         from {
@@ -195,10 +152,6 @@
   }
 
   @media screen and (max-width: 380px) {
-    .underlineSliderMobile {
-      width: 80%;
-    }
-
     .sliderDescMobile {
       font-size: 2.5em;
     }
@@ -210,16 +163,8 @@
     top: 30%;
     left: 50%;
   }
-  .underlineSlider[data-scroll='in'] {
-    top: 40%;
-    left: 60%;
-  }
   .sliderCationMobile[data-scroll='in'] {
     top: 30%;
     left: 50%;
-  }
-  .underlineSliderMobile[data-scroll='in'] {
-    top: 40%;
-    left: 60%;
   }
 }
